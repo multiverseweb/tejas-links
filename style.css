@@ -63,6 +63,7 @@ hr {
 .link {
     backdrop-filter: blur(9px);
     background-color: #2326345e;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     margin: 2vh;
     margin-left: 7vw;
