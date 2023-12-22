@@ -63,7 +63,6 @@ hr {
 .link {
     backdrop-filter: blur(9px);
     background-color: #2326345e;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     margin: 2vh;
     margin-left: 7vw;
@@ -107,7 +106,7 @@ hr {
 }
 
 .mail {
-    width: 3.5vh;
+    width: 3vh;
     transition-duration: 0.2s;
 }
 .mail:hover{
@@ -130,7 +129,7 @@ hr {
     width: 0px;
     background-color: #d78f00;
     border-radius: 1px;
-    animation-duration: 10s;
+    animation-duration: 15s;
     position: fixed;
     animation-name: move;
     animation-iteration-count: infinite;
@@ -139,41 +138,45 @@ hr {
     box-shadow: 120px 80px 40px 20px #0ff;
 }
 #e2{
-    animation-duration: 15s;
+    animation-duration: 20s;
     background-color: #73daca;
     animation-delay: 0.5s;
-    left:-20vw;
     box-shadow: 120px 80px 40px 20px #d78f00;
 }
 
 @keyframes move {
     0% {
         top:0vh;
-        margin-left: 0vw;
+        margin-left: 20vw;
         opacity: 0;
     }
-    20%{
+    16%{
         top:52vh;
         margin-left: 70vw;
         opacity: 1;
     }
-    40%{
+    32%{
         top:80vh;
         margin-left: 20vw;
     }
-    60%{
+    48%{
         top:90vh;
         margin-left: 80vw;
         opacity: 1;
     }
-    80%{
+    66%{
         top:20vh;
         margin-left: 57vw;
         opacity: 1;
     }
+    83%{
+        top:80vh;
+        margin-left: -15vw;
+        opacity: 1;
+    }
     100% {
         top:0vh;
-        margin-left: 0vw;
+        margin-left: 20vw;
         opacity: 0;
     }
 }
