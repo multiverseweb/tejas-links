@@ -12,7 +12,7 @@ body {
 
 .face {
     height: 10vh;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);}
+}
 
 .container {
     text-align: center;
@@ -172,7 +172,7 @@ hr {
     }
     83%{
         top:80vh;
-        margin-left: -15vw;
+        margin-left: -25vw;
         opacity: 1;
     }
     100% {
