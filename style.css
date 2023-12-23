@@ -162,7 +162,7 @@ hr {
     }
     48%{
         top:90vh;
-        margin-left: 80vw;
+        margin-left: 70vw;
         opacity: 1;
     }
     66%{
@@ -172,7 +172,7 @@ hr {
     }
     83%{
         top:80vh;
-        margin-left: -25vw;
+        margin-left: -15vw;
         opacity: 1;
     }
     100% {
