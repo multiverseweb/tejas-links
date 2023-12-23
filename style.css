@@ -12,7 +12,7 @@ body {
 
 .face {
     height: 10vh;
-}
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);}
 
 .container {
     text-align: center;
@@ -70,6 +70,7 @@ hr {
     height: 4vh;
     width: 80vw;
     transition-duration: 0.2s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
 
