@@ -203,11 +203,12 @@ hr {
     background-color: #00000000;
     border: none;
     color: white;
-    bottom: 20px;
-    left: 20px;
-    position:fixed;
     z-index: 10;
     opacity: 0.7;
+    position: absolute;
+    right: 20px;
+    padding-bottom: 30px;
+    margin-top: -10px;
 }
 .symbol{
     filter: brightness(0) invert(1);
