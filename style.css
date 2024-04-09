@@ -7,7 +7,7 @@ body {
     background-color: #000000;
     color: rgba(255, 255, 255, 0.881);
     font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .face {
@@ -23,7 +23,7 @@ body {
 }
 
 .small {
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 a {
@@ -212,4 +212,7 @@ hr {
 .symbol{
     filter: brightness(0) invert(1);
     height: 17px;
+}
+.category{
+    font-size: 1.1rem;
 }
