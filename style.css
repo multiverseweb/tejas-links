@@ -78,6 +78,13 @@ hr {
     filter: brightness(1) invert(0);
 }
 
+
+.link:hover #github{
+    filter: brightness(1) invert(1);
+}
+.link:hover #journal{
+    filter: brightness(5) hue-rotate(-30deg);
+}
 .link::before {
     content: " ";
     display: block;
