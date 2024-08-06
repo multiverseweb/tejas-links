@@ -34,7 +34,7 @@ function startRandomMovement() {
 // Function to handle click event on "Softwares" link
 function handleSoftwaresClick(event) {
     event.preventDefault(); // Prevent the default link action
-    alert("Softwares will be available soon");
+    alert("Softwares will be available soon.");
 }
 
 // Add event listener to the "Softwares" link when DOM is fully loaded
