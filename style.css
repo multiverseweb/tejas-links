@@ -74,6 +74,27 @@ hr {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
+#socials{
+    width: 30px;
+    padding: 10px;
+    margin-left: 0;
+    margin-right: 0;
+}
+#socials a{
+    width: 30px;
+}
+#socials a img{
+    margin-top: -5px;
+}
+
+.socialsBox{
+    width: 90vw;
+    margin-left: 5vw;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+}
+
 
 .link:hover .icon{
     filter: brightness(1) invert(0);
@@ -164,6 +185,11 @@ hr {
     hr{
         width: 30vw;
         margin-left: 10vw;
+    }
+    .socialsBox{
+        width: 30vw;
+        margin-left: 43vw;
+        transform: translate(-25%);
     }
 }
 
