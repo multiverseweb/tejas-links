@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #000000;
+    background-color: #101010;
     color: rgba(255, 255, 255, 0.881);
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -20,6 +20,7 @@ body {
 
 .face {
     height: 10vh;
+    border-radius: 50%;
 }
 
 .content {
@@ -79,7 +80,7 @@ hr {
 
 .link {
     backdrop-filter: blur(6px);
-    background-color: #4a4a4a36;
+    background-color: #4a4a4a37;
     border-radius: 5px;
     margin: 2vh;
     margin-left: 7vw;
@@ -136,7 +137,7 @@ hr {
     bottom: 0;
     left: 0;
     inset: 0 0 0 0;
-    background: #3737378b;
+    background: #373737;
     z-index: -1;
     transition: transform .3s ease;
 }

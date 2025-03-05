@@ -31,12 +31,6 @@ function startRandomMovement() {
     }, 3000); // move every 3 seconds
 }
 
-// Function to handle click event on "Softwares" link
-function handleSoftwaresClick(event) {
-    event.preventDefault(); // Prevent the default link action
-    alert("Softwares will be available soon.");
-}
-
 // Add event listener to the "Softwares" link when DOM is fully loaded
 document.addEventListener('DOMContentLoaded', function() {
     // Get the link element with the "Softwares" text
