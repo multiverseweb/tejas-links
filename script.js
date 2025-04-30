@@ -1,11 +1,4 @@
 console.log("Tejas' Codes :)");
-
-// Function to copy text to clipboard and update button text
-function copy() {
-    navigator.clipboard.writeText("tejas-links.netlify.app");
-    document.getElementById("copy").innerHTML = "Link Copied!✓";
-}
-
 // Function to move elements to random positions on the screen
 function moveElementRandomly(element) {
     const screenWidth = window.innerWidth - element.clientWidth;
@@ -28,7 +21,7 @@ function startRandomMovement() {
     setInterval(() => {
         moveElementRandomly(element1);
         moveElementRandomly(element2);
-    }, 3000); // move every 3 seconds
+    }, 10000); // move every 30 seconds
 }
 
 // Add event listener to the "Softwares" link when DOM is fully loaded
