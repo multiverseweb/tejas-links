@@ -4,14 +4,18 @@
 }
 
 body {
-    background-color: #101010;
+    background-color: #070707;
     color: rgba(255, 255, 255, 0.881);
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+img{
+    pointer-events: none;
+    user-select: none;
+}
 .face {
-    height: 10vh;
+    height: 12vh;
     border-radius: 50%;
 }
 
@@ -23,13 +27,9 @@ body {
 .container {
     text-align: center;
     margin-top: 8vh;
-    width: 70vw;
-    margin-left: 15vw;
+    width: 80vw;
+    margin-left: 10vw;
     word-wrap: break-word;
-}
-
-.container p {
-    text-shadow: 0 0 20px black, 0 0 20px black, 0 0 20px black, 0 0 20px black, 0 0 20px black;
 }
 
 .small {
@@ -38,14 +38,17 @@ body {
 
 a {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.881);
+    color: rgba(255, 255, 255, 0.834);
+    -webkit-tap-highlight-color: transparent;
 }
 
 hr {
-    height: 1px;
     border: none;
-    background-color: #484a5195;
-    margin-bottom: 2vh;
+    border-top: 1px solid #484a5195;
+    margin: 30px;
+    width: 70vw;
+    margin-left: 15vw;
+
 }
 
 .links {
@@ -58,21 +61,12 @@ hr {
     position: absolute;
     left: 0vw;
     margin-top: -1.5vh;
-    background-color: #00000000;
 }
 
-.icon {
-    filter: brightness(0) invert(1);
-    width: 3.5vh;
-    position: absolute;
-    left: 1.5vh;
-    top: 2.25vh;
-    transition-duration: 0.2s;
-}
 
 .link {
     backdrop-filter: blur(6px);
-    background-color: #4a4a4a00;
+    background-color: #07070785;
     border-radius: 5px;
     margin: 2vh;
     margin-left: 7vw;
@@ -82,6 +76,10 @@ hr {
     width: 80vw;
     transition-duration: 0.2s;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+.link:hover {
+    background-color: #161616b3;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
 }
 
 #socials {
@@ -106,6 +104,17 @@ hr {
     display: flex;
     flex-direction: row;
 }
+.icon {
+    filter: brightness(0) invert(1);
+    width: 3.5vh;
+    position: absolute;
+    left: 1.5vh;
+    top: 2.25vh;
+    transition-duration: 0.2s;
+}
+#portfolio {
+    filter: saturate(0) brightness(1.1);
+}
 
 
 .link:hover .icon {
@@ -113,40 +122,12 @@ hr {
 }
 
 
-.link:hover #github {
-    filter: brightness(1) invert(0);
+.link:hover #portfolio {
+    filter: saturate(1) brightness(1);
 }
 
-.link:hover #journal {
-    filter: brightness(5) hue-rotate(-30deg);
-}
-
-.link::before {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    inset: 0 0 0 0;
-    background: #373737;
-    z-index: -1;
-    transition: transform .3s ease;
-}
-
-.link {
-    position: relative;
-}
-
-.link::before {
-    transform: scaleX(0);
-    transform-origin: bottom right;
-}
-
-.link:hover::before {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+.link:hover .journal {
+    filter: brightness(0) invert(1);
 }
 
 .mail {
@@ -158,46 +139,13 @@ hr {
     transform: scale(1.1);
 }
 
-.end {
-    font-family: "Redacted Script", cursive;
-    text-align: center;
-    margin-top: 4vh;
-    width: 50vw;
-    margin-left: 25vw;
-    margin-bottom: 7cqi;
-    font-size: 15px;
-}
-
-.end p {
-    opacity: 0.5;
-}
-
-.element1 {
-    margin-top: 1px;
-    height: 0px;
-    width: 0px;
-    top: 20vh;
-    left: 20vw;
-    background-color: #d78f00;
-    border-radius: 1px;
-    position: fixed;
-    z-index: -10;
-    box-shadow: 120px 80px 40px 20px #0ff;
-    transition-duration: 10s;
-}
-
-#e2 {
-    background-color: #73daca;
-    box-shadow: 120px 80px 40px 20px #ffaa00;
-}
-
 .category {
     margin-left: 0vw;
     font-size: 1.1rem;
     width: 100vw;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 600px) {
     .link {
         width: 40vw;
         margin-left: 30vw;
@@ -209,7 +157,7 @@ hr {
 
     hr {
         width: 30vw;
-        margin-left: 10vw;
+        margin-left: 35vw;
     }
 
     .socialsBox {
@@ -221,22 +169,4 @@ hr {
         width: calc(100vw - 15px);
     }
 
-}
-
-.copy {
-    background-color: #00000000;
-    border: none;
-    color: white;
-    z-index: 10;
-    opacity: 0.7;
-    position: absolute;
-    right: 20px;
-    padding-bottom: 30px;
-    margin-top: -10px;
-    cursor:crosshair;
-}
-
-.symbol {
-    filter: brightness(0) invert(1);
-    height: 17px;
 }
