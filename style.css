@@ -19,17 +19,17 @@ img{
     border-radius: 50%;
 }
 
-.content {
-    position: absolute;
-    top: 0;
-}
-
 .container {
+    padding: 10px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(100vw - 20px);
+    max-width: 500px;
+    margin: auto;
     text-align: center;
-    margin-top: 8vh;
-    width: 80vw;
-    margin-left: 10vw;
-    word-wrap: break-word;
 }
 
 .small {
@@ -45,35 +45,24 @@ a {
 hr {
     border: none;
     border-top: 1px solid #484a5195;
-    margin: 30px;
+    margin: 30px 0;
     width: 70vw;
-    margin-left: 15vw;
-
-}
-
-.links {
-    text-align: center;
 }
 
 .linka {
-    padding: 2vh;
-    width: 80vw;
-    position: absolute;
-    left: 0vw;
-    margin-top: -1.5vh;
+    width: 100%;
+    padding-right: 22px;
 }
 
-
 .link {
+    display: flex;
+    align-items: center;
     backdrop-filter: blur(6px);
     background-color: #07070785;
-    border-radius: 5px;
-    margin: 2vh;
-    margin-left: 7vw;
+    margin: 5px;
     border:1px solid rgba(43, 43, 43, 0.848);
-    padding: 2vh;
-    height: 4vh;
-    width: 80vw;
+    padding: 10px;
+    width: calc(100% - 30px);
     transition-duration: 0.2s;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
@@ -82,45 +71,18 @@ hr {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
 }
 
-#socials {
-    width: 30px;
-    padding: 10px;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-#socials a {
-    width: 30px;
-}
-
-#socials a img {
-    margin-top: -5px;
-}
-
-.socialsBox {
-    width: 90vw;
-    margin-left: 5vw;
-    justify-content: space-around;
-    display: flex;
-    flex-direction: row;
-}
 .icon {
     filter: brightness(0) invert(1);
-    width: 3.5vh;
-    position: absolute;
-    left: 1.5vh;
-    top: 2.25vh;
+    height: 22px;
     transition-duration: 0.2s;
 }
 #portfolio {
     filter: saturate(0) brightness(1.1);
 }
 
-
 .link:hover .icon {
     filter: brightness(1) invert(0);
 }
-
 
 .link:hover #portfolio {
     filter: saturate(1) brightness(1);
@@ -131,7 +93,7 @@ hr {
 }
 
 .mail {
-    width: 3.5vh;
+    height: 22px;
     transition-duration: 0.2s;
 }
 
@@ -140,29 +102,13 @@ hr {
 }
 
 .category {
-    margin-left: 0vw;
+    margin-top: 10px;
+    margin-bottom: 5px;
     font-size: 1.1rem;
-    width: 100vw;
 }
 
 @media (min-width: 600px) {
-    .link {
-        width: 40vw;
-        margin-left: 30vw;
-    }
-
-    .linka {
-        width: 40vw;
-    }
-
     hr {
         width: 30vw;
-        margin-left: 35vw;
-    }
-
-    .socialsBox {
-        width: 30vw;
-        margin-left: 43vw;
-        transform: translate(-25%);
     }
 }
