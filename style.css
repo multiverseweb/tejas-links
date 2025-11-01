@@ -165,8 +165,4 @@ hr {
         margin-left: 43vw;
         transform: translate(-25%);
     }
-    .category{
-        width: calc(100vw - 15px);
-    }
-
 }
